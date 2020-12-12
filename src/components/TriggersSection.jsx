@@ -14,6 +14,7 @@ export const TriggersSection = () => {
           <h2>
             Some of my <span>triggers</span>
           </h2>
+          {/* кинуть сюда cards */}
         </div>
         <div className="cards">
           <div className="card">

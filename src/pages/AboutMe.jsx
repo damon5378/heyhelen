@@ -1,5 +1,6 @@
 import React from "react";
 import AboutSection from "../components/AboutSection";
+import { QA } from "../components/QA";
 import { TriggersSection } from "../components/TriggersSection";
 
 const AboutMe = () => {
@@ -7,6 +8,7 @@ const AboutMe = () => {
     <>
       <AboutSection />
       <TriggersSection />
+      <QA />
     </>
   );
 };
