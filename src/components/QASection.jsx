@@ -1,37 +1,49 @@
 import React from "react";
+import styled from "styled-components";
+import girl from "../img/qa/girl.svg";
+import ukraine from "../img/qa/ukraine.svg";
+import glasses from "../img/qa/glasses.svg";
+import shoe from "../img/qa/shoe.svg";
+import cat from "../img/qa/cat.svg";
 
-export const QA = () => {
+export const QASection = () => {
   return (
-    <div className="qa">
+    <QA>
       <h2>
         Частозадаваемые <span>вопросы</span>
       </h2>
       <div className="question">
-        <h4>Как меня зовут?</h4>
+        <h4>Как тебя зовут?</h4>
         <div className="answer">
           <p>Елена</p>
+          <img src={girl} alt="" />
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
-        <h4>Сколько лет?</h4>
+        <h4>Сколько тебе лет?</h4>
         <div className="answer">
           <p>27</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
-        <h4>Когда день рождения?</h4>
+        <h4>Когда у тебя день рождения?</h4>
         <div className="answer">
           <p>18 июня</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
-        <h4>Где живёшь?</h4>
+        <h4>Где ты живёшь?</h4>
         <div className="answer">
           <p>В Украине, город не афиширую</p>
+          <img src={ukraine} alt="" />
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
@@ -39,41 +51,51 @@ export const QA = () => {
         <div className="answer">
           <p>169 см</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
-        <h4>Какое зрение?</h4>
+        <h4>Какое у тебя зрение?</h4>
         <div className="answer">
           <p>Минус 5</p>
+          <img src={glasses} alt="" />
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
-        <h4>Какой размер ноги?(Да-да, и такое спрашивают)</h4>
+        <h4>Какой у тебя размер ноги?(Да-да, и такое спрашивают)</h4>
         <div className="answer">
           <p>37</p>
+          <img src={shoe} alt="" />
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
-        <h4>Есть домашние питомцы?</h4>
+        <h4>Есть ли у тебя домашние питомцы?</h4>
         <div className="answer">
           <p>Да. две кошки - Миа и Алиса (беспородные)</p>
+          <img src={cat} alt="" />
+          <img src={cat} alt="" />
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
-        <h4>Какой любимый цвет?</h4>
+        <h4>Какой у тебя любимый цвет?</h4>
         <div className="answer">
-          <p>Чёрный</p>
+          <p className="black">Чёрный</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
-        <h4>Какие языки знаешь?</h4>
+        <h4>Какие языки ты знаешь?</h4>
         <div className="answer">
           <p>Украинский, Русский и Английский</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
@@ -81,6 +103,7 @@ export const QA = () => {
         <div className="answer">
           <p>Iphone 11 Pro Max</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
@@ -88,6 +111,7 @@ export const QA = () => {
         <div className="answer">
           <p>Менеджер по туризму и экскурсовод</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
@@ -95,6 +119,7 @@ export const QA = () => {
         <div className="answer">
           <p>Случайно увидела видео на youtube 5 лет назад</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
@@ -102,6 +127,7 @@ export const QA = () => {
         <div className="answer">
           <p>5 лет</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
@@ -109,13 +135,15 @@ export const QA = () => {
         <div className="answer">
           <p>Gentle Whispering ASMR</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
-        <h4>Любимые триггеры?</h4>
+        <h4>Какие у тебя любимые триггеры?</h4>
         <div className="answer">
           <p>Шёпот, шуршание, липкие звуки</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
@@ -123,6 +151,7 @@ export const QA = () => {
         <div className="answer">
           <p>2,5 года</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
@@ -133,20 +162,23 @@ export const QA = () => {
             ни дня моей жизни :3
           </p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
-        <h4>Любимая книга?</h4>
+        <h4>Какая у тебя любимая книга?</h4>
         <div className="answer">
           <p>Б. Вербер «Империя ангелов»</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
-        <h4>Любимый фильм?</h4>
+        <h4>Какой у тебя любимый фильм?</h4>
         <div className="answer">
           <p>Трилогия "Властелин колец"</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
@@ -157,6 +189,7 @@ export const QA = () => {
             направления Indie, Rock, Alternative, Pop.
           </p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
@@ -164,6 +197,7 @@ export const QA = () => {
         <div className="answer">
           <p>Два штуки</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
@@ -171,6 +205,7 @@ export const QA = () => {
         <div className="answer">
           <p>Canon 80D</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
@@ -178,6 +213,7 @@ export const QA = () => {
         <div className="answer">
           <p>Sony a6000, Sigma 16mm f1.4</p>
         </div>
+        <div className="qa_line"></div>
       </div>
 
       <div className="question">
@@ -191,7 +227,55 @@ export const QA = () => {
           <p>Мышь a4tech Bloody V7</p>
           <p>Мониторы Asus MG248Q, LG 23MP68VQ-P</p>
         </div>
+        <div className="qa_line"></div>
       </div>
-    </div>
+    </QA>
   );
 };
+
+const QA = styled.div`
+  min-height: 90vh;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+  color: white;
+  h2 {
+    padding-bottom: 2rem;
+    font-weight: lighter;
+  }
+  .question {
+    padding: 3rem 0rem;
+    cursor: pointer;
+  }
+  .answer {
+    padding: 2rem 0rem;
+    p {
+      padding: 1rem 0rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    img {
+      width: 70px;
+      height: 70px;
+      margin-left: 15px;
+      vertical-align: middle;
+    }
+    .black {
+      color: #000;
+      font-weight: bold;
+      border: 3px solid black;
+      padding: 1px 10px;
+      border-radius: 10px;
+    }
+  }
+  .qa_line {
+    background: #cccccc;
+    height: 0.2rem;
+    margin: 2rem 0rem;
+    width: 100%;
+  }
+  /* span {
+    display: block;
+  } */
+`;
