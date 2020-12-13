@@ -57,7 +57,7 @@ const GlobalStyles = createGlobalStyle`
         font-weight: bold;
         background-color: red;
         color: white;
-        padding: 0 15px 5px 15px;
+        padding: 0 15px 0 15px;
         border-radius: 25px;
     }
 `;

@@ -5,6 +5,8 @@ import ukraine from "../img/qa/ukraine.svg";
 import glasses from "../img/qa/glasses.svg";
 import shoe from "../img/qa/shoe.svg";
 import cat from "../img/qa/cat.svg";
+import russia from "../img/qa/russia.svg";
+import eng from "../img/qa/eng.svg";
 
 export const QASection = () => {
   return (
@@ -94,6 +96,9 @@ export const QASection = () => {
         <h4>Какие языки ты знаешь?</h4>
         <div className="answer">
           <p>Украинский, Русский и Английский</p>
+          <img src={ukraine} alt="" />
+          <img src={russia} alt="" />
+          {/* <img src={eng} alt="" /> */}
         </div>
         <div className="qa_line"></div>
       </div>
@@ -102,6 +107,7 @@ export const QASection = () => {
         <h4>Какой у тебя телефон?</h4>
         <div className="answer">
           <p>Iphone 11 Pro Max</p>
+          <img src={eng} alt="" />
         </div>
         <div className="qa_line"></div>
       </div>
