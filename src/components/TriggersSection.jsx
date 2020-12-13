@@ -1,5 +1,6 @@
 import React from "react";
 // import { FaMicrophone } from "react-icons";
+import styled from "styled-components";
 import helen from "../img/helen.png";
 import brush from "../img/brush.svg";
 import micro from "../img/micro.svg";
@@ -8,48 +9,107 @@ import headset from "../img/headset.svg";
 
 export const TriggersSection = () => {
   return (
-    <div>
-      <div className="triggers">
-        <div className="description">
-          <h2>
-            Some of my <span>triggers</span>
-          </h2>
-          {/* кинуть сюда cards */}
-        </div>
-        <div className="cards">
-          <div className="card">
+    <Triggers>
+      <Description>
+        <h2>
+          Некоторые <span>триггеры</span>
+        </h2>
+        <Cards>
+          <Card>
             <div className="icon">
               <img src={brush} alt="" />
-              <h3>Brush Trigger</h3>
+              <h3>Кисточка</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div className="card">
+            <p>Отлично мурашит, проводя лёгкими движениями по микрофону</p>
+          </Card>
+          <Card>
             <div className="icon">
               <img src={micro} alt="" />
-              <h3>Microphone Trigger</h3>
+              <h3>Микрофон</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div className="card">
+            <p>Сам по себе триггер, без которого невозможен АСМР</p>
+          </Card>
+          <Card>
             <div className="icon">
               <img src={wood} alt="" />
-              <h3>Wood Trigger</h3>
+              <h3>Дерево</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div className="card">
+            <p>Классный звук при постукивании по дереву</p>
+          </Card>
+          <Card>
             <div className="icon">
               <img src={headset} alt="" />
-              <h3>Headset is the best for listen ASMR</h3>
+              <h3>Наушники</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-      </div>
-      <div className="image">
+            <p>Отменное мурашество достигается именно в наушниках</p>
+          </Card>
+        </Cards>
+      </Description>
+      <Image>
         <img src={helen} alt="" />
-      </div>
-    </div>
+      </Image>
+    </Triggers>
   );
 };
+
+const Triggers = styled.div`
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+  color: white;
+  h2 {
+    padding-bottom: 5rem;
+  }
+  p {
+    width: 70%;
+    padding: 2rem 0 4rem 0;
+    font-size: 1.1rem;
+  }
+`;
+
+const Description = styled.div`
+  flex: 1;
+  padding-left: 5rem;
+  h2 {
+    font-weight: lighter;
+  }
+`;
+
+const Image = styled.div`
+  flex: 1;
+  overflow: hidden;
+  img {
+    width: 40%;
+    height: 60vh;
+    object-fit: cover;
+    border: 5px solid #23d997;
+    border-radius: 25px;
+  }
+`;
+
+const Cards = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+`;
+
+const Card = styled.div`
+  flex-basis: 20rem;
+  .icon {
+    display: flex;
+    align-items: center;
+    h3 {
+      margin-left: 1rem;
+      background: white;
+      color: #000;
+      padding: 1rem;
+      border-radius: 20px;
+    }
+  }
+  img {
+    width: 50px;
+    height: 50px;
+  }
+`;

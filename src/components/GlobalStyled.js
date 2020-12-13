@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
     }
     body{
         background: #1b1b1b;
+        font-family: 'El Messiri', sans-serif;
     }
     button{
         font-weight: bold;
@@ -49,6 +50,7 @@ const GlobalStyles = createGlobalStyle`
     }
     .additional_class{
         margin-top: 15px;
+        margin-bottom: 10px;
     }
     .youtube{
         font-weight: bold;

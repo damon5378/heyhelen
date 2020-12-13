@@ -1,5 +1,5 @@
 import React from "react";
-import helen from "../img/helen.png";
+import helen from "../img/helen3.jpg";
 import styled from "styled-components";
 
 const AboutSection = () => {
@@ -25,7 +25,12 @@ const AboutSection = () => {
         <button>Contact me</button>
       </Description>
       <Image>
-        <img style={{ borderRadius: 25 }} src={helen} alt="Cutie Helen" />
+        <img
+          style={{ borderRadius: 25 }}
+          src={helen}
+          alt="Cutie Helen"
+          className="helen"
+        />
       </Image>
     </About>
   );
@@ -51,11 +56,12 @@ const Description = styled.div`
 const Image = styled.div`
   flex: 1;
   overflow: hidden;
-  /* img {
-    width: 50%;
-    height: 50vh;
+  img {
+    width: 100%;
+    height: 80vh;
     object-fit: cover;
-  } */
+    border: 5px solid #23d997;
+  }
 `;
 
 const Hide = styled.div`
