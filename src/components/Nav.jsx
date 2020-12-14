@@ -12,13 +12,13 @@ export const Nav = () => {
       </h1>
       <ul>
         <li>
-          <NavLink to="/">Обо мне</NavLink>
+          <NavLink to="/heyhelen/">Обо мне</NavLink>
         </li>
         <li>
-          <NavLink to="/videos">Мои видео</NavLink>
+          <NavLink to="/heyhelen/videos">Мои видео</NavLink>
         </li>
         <li>
-          <NavLink to="/contacts">Контакты</NavLink>
+          <NavLink to="/heyhelen/contacts">Контакты</NavLink>
         </li>
       </ul>
     </StyledNav>

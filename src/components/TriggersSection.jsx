@@ -1,7 +1,7 @@
 import React from "react";
 // import { FaMicrophone } from "react-icons";
 import styled from "styled-components";
-import helen from "../img/helen.png";
+import helen from "../img/helen4.jpg";
 import brush from "../img/brush.svg";
 import micro from "../img/micro.svg";
 import wood from "../img/wood.svg";
@@ -81,8 +81,8 @@ const Image = styled.div`
   flex: 1;
   overflow: hidden;
   img {
-    width: 40%;
-    height: 60vh;
+    width: 100%;
+    height: 70vh;
     object-fit: cover;
     border: 5px solid #23d997;
     border-radius: 25px;
@@ -96,7 +96,7 @@ const Cards = styled.div`
 `;
 
 const Card = styled.div`
-  flex-basis: 20rem;
+  flex-basis: 22rem;
   .icon {
     display: flex;
     align-items: center;

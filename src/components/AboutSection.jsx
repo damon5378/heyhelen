@@ -21,8 +21,8 @@ const AboutSection = () => {
             </h2>
           </Hide>
         </div>
-        <p>Contact me</p>
-        <button>Contact me</button>
+        {/* <p>Contact me</p>
+        <button>Contact me</button> */}
       </Description>
       <Image>
         <img
@@ -37,7 +37,7 @@ const AboutSection = () => {
 };
 
 const About = styled.div`
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;

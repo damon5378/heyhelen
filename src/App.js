@@ -12,11 +12,11 @@ function App() {
       <GlobalStyles />
       <Nav />
       <Switch>
-        <Route path="/" exact>
+        <Route path="/heyhelen/" exact>
           <AboutMe />
         </Route>
-        <Route path="/videos" component={Videos} />
-        <Route path="/contacts">
+        <Route path="/heyhelen/videos" component={Videos} />
+        <Route path="/heyhelen/contacts">
           <Contacts />
         </Route>
       </Switch>
