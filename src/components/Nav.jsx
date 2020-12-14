@@ -1,23 +1,24 @@
 import React from "react";
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const Nav = () => {
   return (
     <StyledNav>
       <h1>
-        <a id="logo" href="#">
+        <NavLink to="/" id="logo">
           HeyHelen ASMR
-        </a>
+        </NavLink>
       </h1>
       <ul>
         <li>
-          <a href="#">Обо мне</a>
+          <NavLink to="/">Обо мне</NavLink>
         </li>
         <li>
-          <a href="#">Мои видео</a>
+          <NavLink to="/videos">Мои видео</NavLink>
         </li>
         <li>
-          <a href="#">Контакты</a>
+          <NavLink to="/contacts">Контакты</NavLink>
         </li>
       </ul>
     </StyledNav>

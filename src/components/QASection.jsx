@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import girl from "../img/qa/girl.svg";
 import ukraine from "../img/qa/ukraine.svg";
 import glasses from "../img/qa/glasses.svg";
 import shoe from "../img/qa/shoe.svg";
 import cat from "../img/qa/cat.svg";
 import russia from "../img/qa/russia.svg";
-import eng from "../img/qa/eng.svg";
+import apple from "../img/qa/apple.svg";
+import kitty from "../img/qa/kitty.svg";
+import uk from "../img/qa/uk.svg";
+import helen from "../img/qa/helen.jpg";
 
 export const QASection = () => {
   return (
@@ -18,7 +20,7 @@ export const QASection = () => {
         <h4>Как тебя зовут?</h4>
         <div className="answer">
           <p>Елена</p>
-          <img src={girl} alt="" />
+          <img style={{ borderRadius: 25 }} src={helen} alt="" />
         </div>
         <div className="qa_line"></div>
       </div>
@@ -79,7 +81,7 @@ export const QASection = () => {
         <div className="answer">
           <p>Да. две кошки - Миа и Алиса (беспородные)</p>
           <img src={cat} alt="" />
-          <img src={cat} alt="" />
+          <img src={kitty} alt="" />
         </div>
         <div className="qa_line"></div>
       </div>
@@ -98,7 +100,7 @@ export const QASection = () => {
           <p>Украинский, Русский и Английский</p>
           <img src={ukraine} alt="" />
           <img src={russia} alt="" />
-          {/* <img src={eng} alt="" /> */}
+          <img style={{ borderRadius: 23 }} src={uk} alt="" />
         </div>
         <div className="qa_line"></div>
       </div>
@@ -107,7 +109,7 @@ export const QASection = () => {
         <h4>Какой у тебя телефон?</h4>
         <div className="answer">
           <p>Iphone 11 Pro Max</p>
-          <img src={eng} alt="" />
+          <img src={apple} alt="" />
         </div>
         <div className="qa_line"></div>
       </div>
@@ -147,7 +149,7 @@ export const QASection = () => {
       <div className="question">
         <h4>Какие у тебя любимые триггеры?</h4>
         <div className="answer">
-          <p>Шёпот, шуршание, липкие звуки</p>
+          <p>Шёпот, шуршание, липкие звуки &#128523;</p>
         </div>
         <div className="qa_line"></div>
       </div>
@@ -165,7 +167,7 @@ export const QASection = () => {
         <div className="answer">
           <p>
             Решила попробовать себя в новом жанре, так как без АСМР не проходит
-            ни дня моей жизни :3
+            ни дня моей жизни &#128540;
           </p>
         </div>
         <div className="qa_line"></div>
@@ -217,7 +219,14 @@ export const QASection = () => {
       <div className="question">
         <h4>На какую камеру стримишь?</h4>
         <div className="answer">
-          <p>Sony a6000, Sigma 16mm f1.4</p>
+          <ul>
+            <li>
+              <p>Sony &alpha; a6000</p>
+            </li>
+            <li>
+              <p>Sigma 16mm f1.4</p>
+            </li>
+          </ul>
         </div>
         <div className="qa_line"></div>
       </div>
@@ -225,13 +234,29 @@ export const QASection = () => {
       <div className="question">
         <h4>Какие характеристики твоего ПК?</h4>
         <div className="answer">
-          <p>Процессор i7 6700k</p>
-          <p>Видеокарта GTX 1080</p>
-          <p>Оперативная память 32 GB</p>
-          <p>SSD 512 GB</p>
-          <p>Клавиатура HyperX Alloy FPS Pro</p>
-          <p>Мышь a4tech Bloody V7</p>
-          <p>Мониторы Asus MG248Q, LG 23MP68VQ-P</p>
+          <ul>
+            <li>
+              <p>Процессор i7 6700k</p>
+            </li>
+            <li>
+              <p>Видеокарта GTX 1080</p>
+            </li>
+            <li>
+              <p>Оперативная память 32 GB</p>
+            </li>
+            <li>
+              <p>SSD 512 GB</p>
+            </li>
+            <li>
+              <p>Клавиатура HyperX Alloy FPS Pro</p>
+            </li>
+            <li>
+              <p>Мышь a4tech Bloody V7</p>
+            </li>
+            <li>
+              <p>Мониторы Asus MG248Q, LG 23MP68VQ-P</p>
+            </li>
+          </ul>
         </div>
         <div className="qa_line"></div>
       </div>
@@ -280,6 +305,9 @@ const QA = styled.div`
     height: 0.2rem;
     margin: 2rem 0rem;
     width: 100%;
+  }
+  .answer:last-child {
+    display: block;
   }
   /* span {
     display: block;
