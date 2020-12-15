@@ -6,7 +6,7 @@ export const Nav = () => {
   return (
     <StyledNav>
       <h1>
-        <NavLink to="/" id="logo">
+        <NavLink to="/heyhelen/" id="logo">
           HeyHelen ASMR
         </NavLink>
       </h1>

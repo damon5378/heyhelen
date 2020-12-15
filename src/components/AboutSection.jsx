@@ -1,26 +1,56 @@
 import React from "react";
 import helen from "../img/helen3.jpg";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
+  const titleAnimation = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1, transition: { duration: 2 } },
+  };
+
+  const container = {
+    hidden: { x: 200 },
+    show: {
+      x: 0,
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+        staggerChildren: 1,
+        when: "afterChildren",
+      },
+    },
+  };
+
   return (
     <About>
       <Description>
-        <div className="title">
+        <motion.div
+          className="title"
+          variants={container}
+          initial="hidden"
+          animate="show"
+        >
           <Hide>
-            <h2>
+            <motion.h2
+              variants={titleAnimation}
+              // initial="hidden"
+              // animate="show"
+            >
               Самая <span>очаровательная</span>
-            </h2>
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>девушка русскоязычного</h2>
+            <motion.h2 variants={titleAnimation}>
+              девушка русскоязычного
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2 className="additional_class">
+            <motion.h2 variants={titleAnimation} className="additional_class">
               АСМР на <span className="youtube">Youtube</span>
-            </h2>
+            </motion.h2>
           </Hide>
-        </div>
+        </motion.div>
         {/* <p>Contact me</p>
         <button>Contact me</button> */}
       </Description>
