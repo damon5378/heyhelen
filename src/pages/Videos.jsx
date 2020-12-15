@@ -1,9 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
+
 export const Videos = () => {
   return (
-    <VideosList>
+    <VideosList variants={pageAnimation} initial="hidden" animate="show">
       <Video>
         <h2>
           АСМР ЧЕРЕЗ 20 МИНУТ ТЫ УСНЕШЬ 🤗 БЛИЗКИЙ ШЕПОТ С УШКА НА УШКО | ASMR
@@ -89,7 +92,7 @@ export const Videos = () => {
   );
 };
 
-const VideosList = styled.div`
+const VideosList = styled(motion.div)`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

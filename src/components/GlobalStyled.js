@@ -5,10 +5,10 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        scrollbar-width: thin;
-        scrollbar-color: rgba(155, 155, 155, .5) transparent;
+        /* scrollbar-width: thin;
+        scrollbar-color: rgba(155, 155, 155, .5) transparent; */
     }
-    *::-webkit-scrollbar{
+    /* *::-webkit-scrollbar{
         width: 10px;
     }
     *::-webkit-scrollbar-track{
@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
         background: linear-gradient(#5750c3, #fd2d46);
         border: transparent;
         border-radius: 20px;
-    }
+    } */
     body{
         background: #1b1b1b;
         font-family: 'El Messiri', sans-serif;

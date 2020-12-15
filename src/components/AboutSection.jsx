@@ -2,6 +2,8 @@ import React from "react";
 import helen from "../img/helen3.jpg";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { zoom } from "../animation";
+import { Wave } from "./Wave";
 
 const AboutSection = () => {
   const titleAnimation = {
@@ -55,13 +57,15 @@ const AboutSection = () => {
         <button>Contact me</button> */}
       </Description>
       <Image>
-        <img
+        <motion.img
+          variants={zoom}
           style={{ borderRadius: 25 }}
           src={helen}
           alt="Cutie Helen"
           className="helen"
         />
       </Image>
+      <Wave />
     </About>
   );
 };
@@ -78,6 +82,7 @@ const About = styled.div`
 const Description = styled.div`
   flex: 1;
   padding-left: 5rem;
+  z-index: 2;
   h2 {
     font-weight: lighter;
   }
@@ -86,6 +91,7 @@ const Description = styled.div`
 const Image = styled.div`
   flex: 1;
   overflow: hidden;
+  z-index: 2;
   img {
     width: 100%;
     height: 80vh;
