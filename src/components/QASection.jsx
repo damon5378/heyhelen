@@ -9,6 +9,8 @@ import apple from "../img/qa/apple.svg";
 import kitty from "../img/qa/kitty.svg";
 import uk from "../img/qa/uk.svg";
 import helen from "../img/qa/helen.jpg";
+import { Toggle } from "./Toggle";
+import { AnimateSharedLayout } from "framer-motion";
 
 export const QASection = () => {
   return (
@@ -16,250 +18,202 @@ export const QASection = () => {
       <h2>
         Частозадаваемые <span>вопросы</span>
       </h2>
-      <div className="question">
-        <h4>Как тебя зовут?</h4>
-        <div className="answer">
-          <p>Елена</p>
-          <img style={{ borderRadius: 25 }} src={helen} alt="" />
-        </div>
-        <div className="qa_line"></div>
-      </div>
+      <AnimateSharedLayout>
+        <Toggle title="Как тебя зовут?">
+          <div className="answer">
+            <p>Елена</p>
+            <img style={{ borderRadius: 25 }} src={helen} alt="" />
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Сколько тебе лет?</h4>
-        <div className="answer">
-          <p>27</p>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Сколько тебе лет?">
+          <div className="answer">
+            <p>27</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Когда у тебя день рождения?</h4>
-        <div className="answer">
-          <p>18 июня</p>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Когда у тебя день рождения?">
+          <div className="answer">
+            <p>18 июня</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Где ты живёшь?</h4>
-        <div className="answer">
-          <p>В Украине, город не афиширую</p>
-          <img src={ukraine} alt="" />
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Где ты живёшь?">
+          <div className="answer">
+            <p>В Украине, город не афиширую</p>
+            <img src={ukraine} alt="" />
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Какой у тебя рост?</h4>
-        <div className="answer">
-          <p>169 см</p>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Какой у тебя рост?">
+          <div className="answer">
+            <p>169 см</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Какое у тебя зрение?</h4>
-        <div className="answer">
-          <p>Минус 5</p>
-          <img src={glasses} alt="" />
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Какое у тебя зрение?">
+          <div className="answer">
+            <p>Минус 5</p>
+            <img src={glasses} alt="" />
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Какой у тебя размер ноги?(Да-да, и такое спрашивают)</h4>
-        <div className="answer">
-          <p>37</p>
-          <img src={shoe} alt="" />
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Какой у тебя размер ноги?(Да-да, и такое спрашивают)">
+          <div className="answer">
+            <p>37</p>
+            <img src={shoe} alt="" />
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Есть ли у тебя домашние питомцы?</h4>
-        <div className="answer">
-          <p>Да. две кошки - Миа и Алиса (беспородные)</p>
-          <img src={cat} alt="" />
-          <img src={kitty} alt="" />
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Есть ли у тебя домашние питомцы?">
+          <div className="answer">
+            <p>Да. две кошки - Миа и Алиса (беспородные)</p>
+            <img src={cat} alt="" />
+            <img src={kitty} alt="" />
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Какой у тебя любимый цвет?</h4>
-        <div className="answer">
-          <p className="black">Чёрный</p>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Какой у тебя любимый цвет?">
+          <div className="answer">
+            <p className="black">Чёрный</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Какие языки ты знаешь?</h4>
-        <div className="answer">
-          <p>Украинский, Русский и Английский</p>
-          <img src={ukraine} alt="" />
-          <img src={russia} alt="" />
-          <img style={{ borderRadius: 23 }} src={uk} alt="" />
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Какие языки ты знаешь?">
+          <div className="answer">
+            <p>Украинский, Русский и Английский</p>
+            <img src={ukraine} alt="" />
+            <img src={russia} alt="" />
+            <img style={{ borderRadius: 23 }} src={uk} alt="" />
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Какой у тебя телефон?</h4>
-        <div className="answer">
-          <p>Iphone 11 Pro Max</p>
-          <img src={apple} alt="" />
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Какой у тебя телефон?">
+          <div className="answer">
+            <p>Iphone 11 Pro Max</p>
+            <img src={apple} alt="" />
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Кто ты по образованию?</h4>
-        <div className="answer">
-          <p>Менеджер по туризму и экскурсовод</p>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Кто ты по образованию?">
+          <div className="answer">
+            <p>Менеджер по туризму и экскурсовод</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Откуда узнала об АСМР?</h4>
-        <div className="answer">
-          <p>Случайно увидела видео на youtube 5 лет назад</p>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Откуда узнала об АСМР?">
+          <div className="answer">
+            <p>Случайно увидела видео на youtube 5 лет назад</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Как давно смотришь АСМР?</h4>
-        <div className="answer">
-          <p>5 лет</p>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Как давно смотришь АСМР?">
+          <div className="answer">
+            <p>5 лет</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Кто твой любимый АСМРтист?</h4>
-        <div className="answer">
-          <p>Gentle Whispering ASMR</p>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Кто твой любимый АСМРтист?">
+          <div className="answer">
+            <p>Gentle Whispering ASMR</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Какие у тебя любимые триггеры?</h4>
-        <div className="answer">
-          <p>Шёпот, шуршание, липкие звуки &#128523;</p>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Какие у тебя любимые триггеры?">
+          <div className="answer">
+            <p>Шёпот, шуршание, липкие звуки &#128523;</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Как давно ведёшь канал?</h4>
-        <div className="answer">
-          <p>2,5 года</p>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Как давно ведёшь канал?">
+          <div className="answer">
+            <p>2,5 года</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Почему решила снимать АСМР?</h4>
-        <div className="answer">
-          <p>
-            Решила попробовать себя в новом жанре, так как без АСМР не проходит
-            ни дня моей жизни &#128540;
-          </p>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Почему решила снимать АСМР?">
+          <div className="answer">
+            <p>
+              Решила попробовать себя в новом жанре, так как без АСМР не
+              проходит ни дня моей жизни &#128540;
+            </p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Какая у тебя любимая книга?</h4>
-        <div className="answer">
-          <p>Б. Вербер «Империя ангелов»</p>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Какая у тебя любимая книга?">
+          <div className="answer">
+            <p>Б. Вербер «Империя ангелов»</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Какой у тебя любимый фильм?</h4>
-        <div className="answer">
-          <p>Трилогия "Властелин колец"</p>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Какой у тебя любимый фильм?">
+          <div className="answer">
+            <p>Трилогия "Властелин колец"</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Какую музыку слушаешь?</h4>
-        <div className="answer">
-          <p>
-            Я меломан, слушаю по настроению все от Feduka до Рамштайна, любимые
-            направления Indie, Rock, Alternative, Pop.
-          </p>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Какую музыку слушаешь?">
+          <div className="answer">
+            <p>
+              Я меломан, слушаю по настроению все от Feduka до Рамштайна,
+              любимые направления Indie, Rock, Alternative, Pop.
+            </p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Сколько у тебя мониторов?</h4>
-        <div className="answer">
-          <p>Два штуки</p>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Сколько у тебя мониторов?">
+          <div className="answer">
+            <p>Два штуки</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>На какую камеру снимаешь видео?</h4>
-        <div className="answer">
-          <p>Canon 80D</p>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="На какую камеру снимаешь видео?">
+          <div className="answer">
+            <p>Canon 80D</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>На какую камеру стримишь?</h4>
-        <div className="answer">
-          <ul>
-            <li>
-              <p>Sony &alpha; a6000</p>
-            </li>
-            <li>
-              <p>Sigma 16mm f1.4</p>
-            </li>
-          </ul>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="На какую камеру стримишь?">
+          <div className="answer">
+            <ul>
+              <li>
+                <p>Sony &alpha; a6000</p>
+              </li>
+              <li>
+                <p>Sigma 16mm f1.4</p>
+              </li>
+            </ul>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Какие характеристики твоего ПК?</h4>
-        <div className="answer">
-          <ul>
-            <li>
-              <p>Процессор i7 6700k</p>
-            </li>
-            <li>
-              <p>Видеокарта GTX 1080</p>
-            </li>
-            <li>
-              <p>Оперативная память 32 GB</p>
-            </li>
-            <li>
-              <p>SSD 512 GB</p>
-            </li>
-            <li>
-              <p>Клавиатура HyperX Alloy FPS Pro</p>
-            </li>
-            <li>
-              <p>Мышь a4tech Bloody V7</p>
-            </li>
-            <li>
-              <p>Мониторы Asus MG248Q, LG 23MP68VQ-P</p>
-            </li>
-          </ul>
-        </div>
-        <div className="qa_line"></div>
-      </div>
+        <Toggle title="Какие характеристики твоего ПК?">
+          <div className="answer">
+            <ul>
+              <li>
+                <p>Процессор i7 6700k</p>
+              </li>
+              <li>
+                <p>Видеокарта GTX 1080</p>
+              </li>
+              <li>
+                <p>Оперативная память 32 GB</p>
+              </li>
+              <li>
+                <p>SSD 512 GB</p>
+              </li>
+              <li>
+                <p>Клавиатура HyperX Alloy FPS Pro</p>
+              </li>
+              <li>
+                <p>Мышь a4tech Bloody V7</p>
+              </li>
+              <li>
+                <p>Мониторы Asus MG248Q, LG 23MP68VQ-P</p>
+              </li>
+            </ul>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </QA>
   );
 };

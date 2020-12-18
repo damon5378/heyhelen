@@ -2,11 +2,60 @@ import React from "react";
 import styled from "styled-components";
 
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animation";
+import { pageAnimation, slider } from "../animation";
 
 export const Videos = () => {
   return (
-    <VideosList variants={pageAnimation} initial="hidden" animate="show">
+    <VideosList
+      variants={pageAnimation}
+      exit="exit"
+      initial="hidden"
+      animate="show"
+    >
+      <Frame1 variants={slider}></Frame1>
+      <Frame2 variants={slider}></Frame2>
+      <Frame3 variants={slider}></Frame3>
+      <Frame4 variants={slider}></Frame4>
+
+      <Video>
+        <h2>🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗</h2>
+        <iframe
+          width="720"
+          height="480"
+          title="ASMR
+          SLEEP IN 20 MINUTES"
+          src="https://www.youtube.com/embed/alBWW6z3iU8"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
+        ></iframe>
+      </Video>
+
+      <Video>
+        <h2>🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗</h2>
+        <iframe
+          width="720"
+          height="480"
+          title="ASMR
+          SLEEP IN 20 MINUTES"
+          src="https://www.youtube.com/embed/3vmwl9Qsrww"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
+        ></iframe>
+      </Video>
+
+      <Video>
+        <h2>🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗</h2>
+        <iframe
+          width="720"
+          height="480"
+          title="ASMR
+          SLEEP IN 20 MINUTES"
+          src="https://www.youtube.com/embed/hwn8hJMx2Uo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
+        ></iframe>
+      </Video>
+
       <Video>
         <h2>
           АСМР ЧЕРЕЗ 20 МИНУТ ТЫ УСНЕШЬ 🤗 БЛИЗКИЙ ШЕПОТ С УШКА НА УШКО | ASMR
@@ -116,4 +165,26 @@ const Video = styled.div`
     border: 5px solid #23d997;
     border-radius: 25px;
   }
+`;
+
+const Frame1 = styled(motion.div)`
+  position: fixed;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  height: 100vh;
+  background: #fffebf;
+  z-index: 2;
+`;
+
+const Frame2 = styled(Frame1)`
+  background: #ff8efb;
+`;
+
+const Frame3 = styled(Frame1)`
+  background: #8ed2ff;
+`;
+
+const Frame4 = styled(Frame1)`
+  background: #8effa0;
 `;

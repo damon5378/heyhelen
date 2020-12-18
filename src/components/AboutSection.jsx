@@ -59,6 +59,8 @@ const AboutSection = () => {
       <Image>
         <motion.img
           variants={zoom}
+          initial="hidden"
+          animate="show"
           style={{ borderRadius: 25 }}
           src={helen}
           alt="Cutie Helen"
@@ -93,8 +95,8 @@ const Image = styled.div`
   overflow: hidden;
   z-index: 2;
   img {
-    width: 100%;
-    height: 80vh;
+    width: 99%;
+    height: auto;
     object-fit: cover;
     border: 5px solid #23d997;
   }
