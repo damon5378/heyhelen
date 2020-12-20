@@ -1,34 +1,37 @@
 {
   "files": {
     "main.css": "/heyhelen/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/heyhelen/static/js/main.6f2ae750.chunk.js",
-    "main.js.map": "/heyhelen/static/js/main.6f2ae750.chunk.js.map",
+    "main.js": "/heyhelen/static/js/main.de5f3e4e.chunk.js",
+    "main.js.map": "/heyhelen/static/js/main.de5f3e4e.chunk.js.map",
     "runtime-main.js": "/heyhelen/static/js/runtime-main.0a628484.js",
     "runtime-main.js.map": "/heyhelen/static/js/runtime-main.0a628484.js.map",
-    "static/js/2.f516b228.chunk.js": "/heyhelen/static/js/2.f516b228.chunk.js",
-    "static/js/2.f516b228.chunk.js.map": "/heyhelen/static/js/2.f516b228.chunk.js.map",
+    "static/js/2.eac9bbbb.chunk.js": "/heyhelen/static/js/2.eac9bbbb.chunk.js",
+    "static/js/2.eac9bbbb.chunk.js.map": "/heyhelen/static/js/2.eac9bbbb.chunk.js.map",
     "index.html": "/heyhelen/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/heyhelen/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.f516b228.chunk.js.LICENSE.txt": "/heyhelen/static/js/2.f516b228.chunk.js.LICENSE.txt",
+    "static/js/2.eac9bbbb.chunk.js.LICENSE.txt": "/heyhelen/static/js/2.eac9bbbb.chunk.js.LICENSE.txt",
     "static/media/apple.00192c20.svg": "/heyhelen/static/media/apple.00192c20.svg",
     "static/media/brush.c5552374.svg": "/heyhelen/static/media/brush.c5552374.svg",
     "static/media/cat.37795943.svg": "/heyhelen/static/media/cat.37795943.svg",
     "static/media/glasses.6fe7f00c.svg": "/heyhelen/static/media/glasses.6fe7f00c.svg",
     "static/media/headset.8d521683.svg": "/heyhelen/static/media/headset.8d521683.svg",
-    "static/media/helen3.ca5cf082.jpg": "/heyhelen/static/media/helen3.ca5cf082.jpg",
     "static/media/helen4.1d07b2f2.jpg": "/heyhelen/static/media/helen4.1d07b2f2.jpg",
+    "static/media/helen5.aef495f2.jpg": "/heyhelen/static/media/helen5.aef495f2.jpg",
+    "static/media/instagram.c59b798d.svg": "/heyhelen/static/media/instagram.c59b798d.svg",
     "static/media/kitty.964a53cc.svg": "/heyhelen/static/media/kitty.964a53cc.svg",
     "static/media/micro.f31dcfed.svg": "/heyhelen/static/media/micro.f31dcfed.svg",
     "static/media/russia.31b16a57.svg": "/heyhelen/static/media/russia.31b16a57.svg",
     "static/media/shoe.f520508c.svg": "/heyhelen/static/media/shoe.f520508c.svg",
     "static/media/uk.7bb03f7e.svg": "/heyhelen/static/media/uk.7bb03f7e.svg",
     "static/media/ukraine.0bfb320c.svg": "/heyhelen/static/media/ukraine.0bfb320c.svg",
-    "static/media/wood.49d84ece.svg": "/heyhelen/static/media/wood.49d84ece.svg"
+    "static/media/vk.8e9ac5f1.svg": "/heyhelen/static/media/vk.8e9ac5f1.svg",
+    "static/media/wood.49d84ece.svg": "/heyhelen/static/media/wood.49d84ece.svg",
+    "static/media/youtube.5213846a.svg": "/heyhelen/static/media/youtube.5213846a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0a628484.js",
-    "static/js/2.f516b228.chunk.js",
+    "static/js/2.eac9bbbb.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.6f2ae750.chunk.js"
+    "static/js/main.de5f3e4e.chunk.js"
   ]
 }
