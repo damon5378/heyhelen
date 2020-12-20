@@ -1,5 +1,5 @@
 import React from "react";
-import helen from "../img/helen3.jpg";
+import helen from "../img/helen5.jpg";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { zoom } from "../animation";

@@ -6,10 +6,20 @@ import brush from "../img/brush.svg";
 import micro from "../img/micro.svg";
 import wood from "../img/wood.svg";
 import headset from "../img/headset.svg";
+import { motion } from "framer-motion";
+import { scrollReveal } from "../animation";
+import { useScroll } from "./useScroll";
 
 export const TriggersSection = () => {
+  const [element, controls] = useScroll();
+
   return (
-    <Triggers>
+    <Triggers
+      variants={scrollReveal}
+      animate={controls}
+      initial="hidden"
+      ref={element}
+    >
       <Description>
         <h2>
           Некоторые <span>триггеры</span>
@@ -52,7 +62,7 @@ export const TriggersSection = () => {
   );
 };
 
-const Triggers = styled.div`
+const Triggers = styled(motion.div)`
   min-height: 90vh;
   display: flex;
   align-items: center;

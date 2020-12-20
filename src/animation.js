@@ -21,6 +21,22 @@ export const pageAnimation = {
   },
 };
 
+export const titleAnim = {
+  hidden: { y: 200 },
+  show: {
+    y: 0,
+    transition: { duration: 0.75, ease: "easeOut" },
+  },
+};
+
+export const fade = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { ease: "easeInOut", duration: 1 },
+  },
+};
+
 export const zoom = {
   hidden: { scale: 2, opacity: 0 },
   show: {
@@ -38,6 +54,11 @@ export const slider = {
     opacity: 1,
     transition: { ease: "easeOut", duration: 2, staggerChildren: 0.2 },
   },
+};
+
+export const scrollReveal = {
+  hidden: { opacity: 0, scale: 1.2 },
+  show: { opacity: 1, scale: 1, transition: { duration: 1 } },
 };
 
 // export const sliderContainer = {

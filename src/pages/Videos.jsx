@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import { motion } from "framer-motion";
 import { pageAnimation, slider } from "../animation";
+import { ScrollTop } from "../components/ScrollTop";
 
 export const Videos = () => {
   return (
@@ -137,6 +138,7 @@ export const Videos = () => {
           allowFullScreen={true}
         ></iframe>
       </Video>
+      <ScrollTop />
     </VideosList>
   );
 };

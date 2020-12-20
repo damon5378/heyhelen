@@ -11,8 +11,13 @@ import uk from "../img/qa/uk.svg";
 import helen from "../img/qa/helen.jpg";
 import { Toggle } from "./Toggle";
 import { AnimateSharedLayout } from "framer-motion";
+import { motion } from "framer-motion";
+import { useScroll } from "./useScroll";
+import { scrollReveal } from "../animation";
 
 export const QASection = () => {
+  const [element, controls] = useScroll();
+
   return (
     <QA>
       <h2>
@@ -218,7 +223,7 @@ export const QASection = () => {
   );
 };
 
-const QA = styled.div`
+const QA = styled(motion.div)`
   min-height: 90vh;
   display: block;
   align-items: center;
@@ -239,6 +244,7 @@ const QA = styled.div`
       padding: 1rem 0rem;
       display: inline-block;
       vertical-align: middle;
+      font-size: 2.2rem;
     }
     img {
       width: 70px;
