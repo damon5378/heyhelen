@@ -95,9 +95,12 @@ const Social = styled(motion.div)`
   @media (max-width: 1024px) {
     margin-left: 150px;
   }
+  @media (max-width: 866px) {
+    margin-left: 310px;
+    display: block;
+  }
   @media (max-width: 768px) {
     margin-left: 250px;
-    display: block;
   }
   @media (max-width: 576px) {
     margin-left: 160px;
