@@ -230,13 +230,15 @@ const QA = styled(motion.div)`
   justify-content: space-between;
   padding: 5rem 10rem;
   color: white;
-  h2 {
+  h4 {
     padding-bottom: 2rem;
     font-weight: lighter;
+    outline: none;
   }
   .question {
     padding: 3rem 0rem;
     cursor: pointer;
+    outline: none;
   }
   .answer {
     padding: 2rem 0rem;
@@ -275,6 +277,9 @@ const QA = styled(motion.div)`
   @media (max-width: 414px) {
     h2 {
       font-size: 3rem;
+    }
+    .qa_line {
+      width: 100%;
     }
   }
   @media (max-width: 320px) {

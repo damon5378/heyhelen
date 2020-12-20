@@ -15,5 +15,7 @@ export const Toggle = ({ children, title }) => {
 };
 
 const ToggleStyle = styled(motion.div)`
-  outline: none;
+  h4 {
+    outline: none;
+  }
 `;

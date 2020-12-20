@@ -101,17 +101,21 @@ const Social = styled(motion.div)`
   }
   @media (max-width: 768px) {
     margin-left: 250px;
+    margin-top: 100px;
   }
   @media (max-width: 576px) {
     margin-left: 160px;
   }
   @media (max-width: 414px) {
     margin-left: 100px;
+    margin-top: 50px;
   }
   @media (max-width: 375px) {
     margin-left: 70px;
+    margin-top: 40px;
   }
   @media (max-width: 320px) {
     margin-left: 50px;
+    margin-top: 30px;
   }
 `;
