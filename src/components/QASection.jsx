@@ -272,4 +272,14 @@ const QA = styled(motion.div)`
   /* span {
     display: block;
   } */
+  @media (max-width: 414px) {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+  @media (max-width: 320px) {
+    h2 {
+      font-size: 2rem;
+    }
+  }
 `;

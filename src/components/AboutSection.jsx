@@ -79,6 +79,11 @@ const About = styled.div`
   justify-content: space-between;
   padding: 5rem 10rem;
   color: white;
+  @media (max-width: 1300px) {
+    display: block;
+    padding: 2rem 2rem;
+    /* text-align: center; */
+  }
 `;
 
 const Description = styled.div`
@@ -87,6 +92,29 @@ const Description = styled.div`
   z-index: 2;
   h2 {
     font-weight: lighter;
+  }
+  @media (max-width: 1300px) {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 576px) {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+  @media (max-width: 414px) {
+    h2 {
+      font-size: 2.8rem;
+    }
+  }
+  @media (max-width: 375px) {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+  @media (max-width: 320px) {
+    h2 {
+      font-size: 2rem;
+    }
   }
 `;
 

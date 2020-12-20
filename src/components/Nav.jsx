@@ -53,4 +53,20 @@ const StyledNav = styled.nav`
     font-size: 3rem;
     font-family: "Courgette", cursive;
   }
+  @media (max-width: 1050px) {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    #logo {
+      display: inline-block;
+      margin: 1rem;
+    }
+    ul {
+      padding: 2rem;
+      justify-content: space-around;
+      width: 100%;
+    }
+    li {
+      padding: 0;
+    }
+  }
 `;

@@ -86,4 +86,29 @@ const Social = styled(motion.div)`
   h2 {
     margin: 2rem;
   }
+  @media (max-width: 1920px) {
+    margin-left: 350px;
+  }
+  @media (max-width: 1366px) {
+    margin-left: 250px;
+  }
+  @media (max-width: 1024px) {
+    margin-left: 150px;
+  }
+  @media (max-width: 768px) {
+    margin-left: 250px;
+    display: block;
+  }
+  @media (max-width: 576px) {
+    margin-left: 160px;
+  }
+  @media (max-width: 414px) {
+    margin-left: 100px;
+  }
+  @media (max-width: 375px) {
+    margin-left: 70px;
+  }
+  @media (max-width: 320px) {
+    margin-left: 50px;
+  }
 `;

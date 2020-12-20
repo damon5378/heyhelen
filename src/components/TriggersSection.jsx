@@ -77,6 +77,19 @@ const Triggers = styled(motion.div)`
     padding: 2rem 0 4rem 0;
     font-size: 1.1rem;
   }
+  @media (max-width: 1300px) {
+    display: block;
+  }
+  @media (max-width: 576px) {
+    p {
+      width: 100%;
+    }
+  }
+  @media (max-width: 414px) {
+    p {
+      width: 100%;
+    }
+  }
 `;
 
 const Description = styled.div`
@@ -84,6 +97,22 @@ const Description = styled.div`
   padding-left: 5rem;
   h2 {
     font-weight: lighter;
+  }
+  @media (max-width: 576px) {
+    h2 {
+      /* margin-left: -30px; */
+    }
+  }
+  @media (max-width: 414px) {
+    h2 {
+      margin-left: -30px;
+    }
+  }
+  @media (max-width: 320px) {
+    h2 {
+      font-size: 3rem;
+      margin-left: -45px;
+    }
   }
 `;
 
@@ -97,12 +126,30 @@ const Image = styled.div`
     border: 5px solid #23d997;
     border-radius: 25px;
   }
+  @media (max-width: 576px) {
+    display: none;
+  }
 `;
 
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
   max-width: 900px;
+  @media (max-width: 1300px) {
+    justify-content: center;
+    margin-left: 100px;
+    /* display: block; // Можно будет оставить */
+  }
+  @media (max-width: 768px) {
+    display: flex;
+    margin-left: 0px;
+  }
+  @media (max-width: 576px) {
+    margin-left: -50px;
+  }
+  @media (max-width: 414px) {
+    margin-left: -50px;
+  }
 `;
 
 const Card = styled.div`
@@ -121,5 +168,11 @@ const Card = styled.div`
   img {
     width: 50px;
     height: 50px;
+  }
+  @media (max-width: 1300px) {
+    flex-basis: 20rem;
+  }
+  @media (max-width: 768px) {
+    /* margin-left: 150px; */
   }
 `;

@@ -8,6 +8,17 @@ const GlobalStyles = createGlobalStyle`
         /* scrollbar-width: thin;
         scrollbar-color: rgba(155, 155, 155, .5) transparent; */
     }
+    html{
+        @media (max-width: 1700px) {
+            font-size: 75%;
+        }
+        @media (max-width: 576px) {
+            font-size: 70%;
+        }
+        @media (max-width: 414px) {
+            font-size: 60%;
+        }
+    }
     /* *::-webkit-scrollbar{
         width: 10px;
     }

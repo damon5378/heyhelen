@@ -19,7 +19,7 @@ export const Videos = () => {
       <Frame4 variants={slider}></Frame4>
 
       <Video>
-        <h2>🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗</h2>
+        {/* <h2>🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗</h2> */}
         <iframe
           width="720"
           height="480"
@@ -32,7 +32,7 @@ export const Videos = () => {
       </Video>
 
       <Video>
-        <h2>🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗</h2>
+        {/* <h2>🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗</h2> */}
         <iframe
           width="720"
           height="480"
@@ -45,7 +45,7 @@ export const Videos = () => {
       </Video>
 
       <Video>
-        <h2>🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗</h2>
+        {/* <h2>🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗</h2> */}
         <iframe
           width="720"
           height="480"
@@ -58,10 +58,7 @@ export const Videos = () => {
       </Video>
 
       <Video>
-        <h2>
-          АСМР ЧЕРЕЗ 20 МИНУТ ТЫ УСНЕШЬ 🤗 БЛИЗКИЙ ШЕПОТ С УШКА НА УШКО | ASMR
-          SLEEP IN 20 MINUTES
-        </h2>
+        {/* <h2> АСМР ЧЕРЕЗ 20 МИНУТ ТЫ УСНЕШЬ 🤗 БЛИЗКИЙ ШЕПОТ С УШКА НА УШКО | ASMR SLEEP IN 20 MINUTES</h2> */}
         <iframe
           width="720"
           height="480"
@@ -74,10 +71,7 @@ export const Videos = () => {
       </Video>
 
       <Video>
-        <h2>
-          РАДИОАКТИВНЫЙ АСМР ОТ LEWITT ☢️ ЧТО В ЧЕРНОМ ЯЩИКЕ? | ASMR WHATS IN
-          THE BOX? TINGLES FROM LEWITT
-        </h2>
+        {/* <h2>РАДИОАКТИВНЫЙ АСМР ОТ LEWITT ☢️ ЧТО В ЧЕРНОМ ЯЩИКЕ? | ASMR WHATS INTHE BOX? TINGLES FROM LEWITT</h2> */}
         <iframe
           width="720"
           height="480"
@@ -90,7 +84,7 @@ export const Videos = () => {
       </Video>
 
       <Video>
-        <h2>АСМР ДЛЯ НОВОГОДНЕГО НАСТРОЕНИЯ 🎄 ASMR FOR CHRISTMAS MOOD</h2>
+        {/* <h2>АСМР ДЛЯ НОВОГОДНЕГО НАСТРОЕНИЯ 🎄 ASMR FOR CHRISTMAS MOOD</h2> */}
         <iframe
           width="720"
           height="480"
@@ -102,9 +96,7 @@ export const Videos = () => {
       </Video>
 
       <Video>
-        <h2>
-          АСМР ВЗРЫВ МУРАШЕК 101% УДОВОЛЬСТВИЯ ✨ ASMR TINGLE EXPLOSION 101%
-        </h2>
+        {/* <h2>АСМР ВЗРЫВ МУРАШЕК 101% УДОВОЛЬСТВИЯ ✨ ASMR TINGLE EXPLOSION 101%</h2> */}
         <iframe
           width="720"
           height="480"
@@ -116,7 +108,7 @@ export const Videos = () => {
       </Video>
 
       <Video>
-        <h2>💖 ТВОЕ ЛЮБИМОЕ НЕЖНОЕ АСМР 💖 YOUR FAVOURITE SWEET ASMR</h2>
+        {/* <h2>💖 ТВОЕ ЛЮБИМОЕ НЕЖНОЕ АСМР 💖 YOUR FAVOURITE SWEET ASMR</h2> */}
         <iframe
           width="720"
           height="480"
@@ -128,7 +120,7 @@ export const Videos = () => {
       </Video>
       {/* stateVideo.map(video => <Video title={video.title}/>) если юзать API */}
       <Video>
-        <h2>АСМР ПОЧИНЮ ТЕБЯ ⚙️ РЕМОНТ ТВОИХ УШЕК ⚡ ASMR FIXING YOU</h2>
+        {/* <h2>АСМР ПОЧИНЮ ТЕБЯ ⚙️ РЕМОНТ ТВОИХ УШЕК ⚡ ASMR FIXING YOU</h2> */}
         <iframe
           width="720"
           height="480"
@@ -152,7 +144,8 @@ const VideosList = styled(motion.div)`
 `;
 
 const Video = styled.div`
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
+  padding-top: 5rem;
   h2 {
     font-size: 1.2rem;
     padding-top: 1rem;
@@ -166,6 +159,30 @@ const Video = styled.div`
     /* margin-left: 55rem; */
     border: 5px solid #23d997;
     border-radius: 25px;
+  }
+  @media (max-width: 576px) {
+    iframe {
+      width: 500px;
+      height: 250px;
+    }
+  }
+  @media (max-width: 414px) {
+    iframe {
+      width: 350px;
+      height: 200px;
+    }
+  }
+  @media (max-width: 375px) {
+    iframe {
+      width: 330px;
+      height: 200px;
+    }
+  }
+  @media (max-width: 320px) {
+    iframe {
+      width: 280px;
+      height: 180px;
+    }
   }
 `;
 
