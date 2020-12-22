@@ -5,6 +5,7 @@ import { Nav } from "./components/Nav";
 import { ScrollTop } from "./components/ScrollTop";
 import AboutMe from "./pages/AboutMe";
 import { Contacts } from "./pages/Contacts";
+import { Merch } from "./pages/Merch";
 import { Videos } from "./pages/Videos";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <AboutMe />
         </Route>
         <Route path="/heyhelen/videos" component={Videos} />
+        <Route path="/heyhelen/merch" component={Merch} />
         <Route path="/heyhelen/contacts">
           <Contacts />
         </Route>

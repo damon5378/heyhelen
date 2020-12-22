@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export const Nav = () => {
+  const { pathname } = useLocation();
   return (
     <StyledNav>
       <h1>
@@ -13,12 +16,37 @@ export const Nav = () => {
       <ul>
         <li>
           <NavLink to="/heyhelen/">Обо мне</NavLink>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: pathname === "/heyhelen/" ? "45%" : "0%" }}
+          />
         </li>
         <li>
-          <NavLink to="/heyhelen/videos">Мои видео</NavLink>
+          <NavLink to="/heyhelen/videos">Видео</NavLink>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: pathname === "/heyhelen/videos" ? "45%" : "0%" }}
+          />
+        </li>
+        <li>
+          <NavLink to="/heyhelen/merch">Мерч</NavLink>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{ width: pathname === "/heyhelen/merch" ? "45%" : "0%" }}
+          />
         </li>
         <li>
           <NavLink to="/heyhelen/contacts">Контакты</NavLink>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: "0%" }}
+            animate={{
+              width: pathname === "/heyhelen/contacts" ? "45%" : "0%",
+            }}
+          />
         </li>
       </ul>
     </StyledNav>
@@ -68,5 +96,18 @@ const StyledNav = styled.nav`
     li {
       padding: 0;
     }
+  }
+`;
+
+const Line = styled(motion.div)`
+  height: 0.3rem;
+  background: #23d997;
+  width: 0%;
+  position: absolute;
+  bottom: -60%;
+  left: 65%;
+  border-radius: 15px;
+  @media (max-width: 576px) {
+    left: 0%;
   }
 `;
