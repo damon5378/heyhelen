@@ -80,6 +80,9 @@ const Triggers = styled(motion.div)`
   @media (max-width: 1300px) {
     display: block;
   }
+  @media (max-width: 768px) {
+    padding: 0rem 0rem;
+  }
   @media (max-width: 576px) {
     p {
       width: 100%;
@@ -126,7 +129,17 @@ const Image = styled.div`
     border: 5px solid #23d997;
     border-radius: 25px;
   }
+  @media (max-width: 768px) {
+    img {
+      width: 80%;
+      height: 60vh;
+      margin-left: 70px;
+    }
+  }
   @media (max-width: 576px) {
+    margin-left: -15px;
+  }
+  @media (max-width: 414px) {
     display: none;
   }
 `;

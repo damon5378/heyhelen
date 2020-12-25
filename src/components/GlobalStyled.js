@@ -5,10 +5,12 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        
         /* scrollbar-width: thin;
         scrollbar-color: rgba(155, 155, 155, .5) transparent; */
     }
     html{
+        overflow-x: hidden;
         @media (max-width: 1700px) {
             font-size: 75%;
         }

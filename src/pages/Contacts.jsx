@@ -64,8 +64,17 @@ const ContactStyle = styled(motion.div)`
 `;
 
 const Title = styled.div`
-  /* margin-bottom: 4rem; */
-  color: #23d997;
+  h2 {
+    color: #23d997;
+  }
+  @media (max-width: 414px) {
+    margin-top: -25px;
+  }
+  @media (max-width: 320px) {
+    h2 {
+      position: absolute;
+    }
+  }
 `;
 
 const Hide = styled.div`
@@ -78,7 +87,7 @@ const Circle = styled.div`
     display: inline-block;
     width: 5rem;
     height: 5rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
   }
   &:last-child {
     margin-top: -0.5rem;
@@ -92,6 +101,26 @@ const Circle = styled.div`
     margin-left: 572px;
     span {
       margin-left: 55px;
+    }
+  }
+  @media (max-width: 1920px) {
+    img {
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 1024px) {
+    img {
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 768px) {
+    img {
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 414px) {
+    img {
+      margin-top: 10px;
     }
   }
 `;
@@ -124,21 +153,21 @@ const Social = styled(motion.div)`
   }
   @media (max-width: 768px) {
     margin-left: 250px;
-    margin-top: 100px;
+    margin-top: 80px;
   }
   @media (max-width: 576px) {
     margin-left: 160px;
   }
   @media (max-width: 414px) {
-    margin-left: 100px;
-    margin-top: 50px;
+    margin-left: 70px;
+    margin-top: 30px;
   }
   @media (max-width: 375px) {
-    margin-left: 70px;
-    margin-top: 40px;
+    margin-left: 63px;
+    margin-top: 20px;
   }
   @media (max-width: 320px) {
     margin-left: 50px;
-    margin-top: 30px;
+    margin-top: 50px;
   }
 `;

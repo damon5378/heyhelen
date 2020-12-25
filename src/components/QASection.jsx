@@ -224,6 +224,7 @@ export const QASection = () => {
 };
 
 const QA = styled(motion.div)`
+  z-index: 5555555555;
   min-height: 90vh;
   display: block;
   align-items: center;
@@ -275,8 +276,10 @@ const QA = styled(motion.div)`
     display: block;
   } */
   @media (max-width: 414px) {
+    margin-right: 55px;
+    padding: 4rem 7rem;
     h2 {
-      font-size: 3rem;
+      font-size: 2.2rem;
     }
     .qa_line {
       width: 100%;
