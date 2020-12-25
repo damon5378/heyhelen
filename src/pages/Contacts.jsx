@@ -41,6 +41,17 @@ export const Contacts = () => {
             </Circle>
           </Social>
         </div>
+        <Social variants={titleAnim}>
+          {/* <Circle>
+            <a
+              className="dev"
+              href="https://www.instagram.com/chris_winchester53/"
+            >
+              <img src={insta} alt="" />
+              <span>Связь с разработчиком)))</span>
+            </a>
+          </Circle> */}
+        </Social>
       </ContactStyle>
     </Hide>
   );
@@ -53,7 +64,7 @@ const ContactStyle = styled(motion.div)`
 `;
 
 const Title = styled.div`
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
   color: #23d997;
 `;
 
@@ -73,9 +84,21 @@ const Circle = styled.div`
     margin-top: -0.5rem;
     margin-bottom: 0;
   }
+  .dev {
+    color: #23d997;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 572px;
+    span {
+      margin-left: 55px;
+    }
+  }
 `;
 
 const Social = styled(motion.div)`
+  .dev {
+  }
   display: inline-block;
   margin-left: 490px;
   margin-top: 200px;

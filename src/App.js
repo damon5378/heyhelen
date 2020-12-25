@@ -15,12 +15,12 @@ function App() {
       <ScrollTop />
       <Nav />
       <Switch>
-        <Route path="/heyhelen/" exact>
+        <Route path="/" exact>
           <AboutMe />
         </Route>
-        <Route path="/heyhelen/videos" component={Videos} />
-        <Route path="/heyhelen/merch" component={Merch} />
-        <Route path="/heyhelen/contacts">
+        <Route path="/videos" component={Videos} />
+        <Route path="/merch" component={Merch} />
+        <Route path="/contacts">
           <Contacts />
         </Route>
       </Switch>

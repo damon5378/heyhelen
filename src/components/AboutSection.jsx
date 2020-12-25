@@ -79,10 +79,26 @@ const About = styled.div`
   justify-content: space-between;
   padding: 5rem 10rem;
   color: white;
+  overflow-x: hidden;
   @media (max-width: 1300px) {
     display: block;
     padding: 2rem 2rem;
     /* text-align: center; */
+  }
+  @media (max-width: 768px) {
+    overflow-x: hidden;
+  }
+  @media (max-width: 576px) {
+    overflow-x: hidden;
+  }
+  @media (max-width: 414px) {
+    overflow-x: hidden;
+  }
+  @media (max-width: 375px) {
+    overflow-x: hidden;
+  }
+  @media (max-width: 320px) {
+    overflow-x: hidden;
   }
 `;
 

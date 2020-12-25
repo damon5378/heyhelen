@@ -9,42 +9,44 @@ export const Nav = () => {
   return (
     <StyledNav>
       <h1>
-        <NavLink to="/heyhelen/" id="logo">
+        <NavLink to="/" id="logo">
+          {" "}
+          {/*/heyhelen/ */}
           HeyHelen ASMR
         </NavLink>
       </h1>
       <ul>
         <li>
-          <NavLink to="/heyhelen/">Обо мне</NavLink>
+          <NavLink to="/">Обо мне</NavLink>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/heyhelen/" ? "45%" : "0%" }}
+            animate={{ width: pathname === "/" ? "45%" : "0%" }}
           />
         </li>
         <li>
-          <NavLink to="/heyhelen/videos">Видео</NavLink>
+          <NavLink to="/videos">Видео</NavLink>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/heyhelen/videos" ? "45%" : "0%" }}
+            animate={{ width: pathname === "/videos" ? "45%" : "0%" }}
           />
         </li>
         <li>
-          <NavLink to="/heyhelen/merch">Мерч</NavLink>
+          <NavLink to="/merch">Мерч</NavLink>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/heyhelen/merch" ? "45%" : "0%" }}
+            animate={{ width: pathname === "/merch" ? "45%" : "0%" }}
           />
         </li>
         <li>
-          <NavLink to="/heyhelen/contacts">Контакты</NavLink>
+          <NavLink to="/contacts">Контакты</NavLink>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
             animate={{
-              width: pathname === "/heyhelen/contacts" ? "45%" : "0%",
+              width: pathname === "/contacts" ? "45%" : "0%",
             }}
           />
         </li>

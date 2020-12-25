@@ -13,7 +13,7 @@ import { Toggle } from "./Toggle";
 import { AnimateSharedLayout } from "framer-motion";
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
-import { scrollReveal } from "../animation";
+// import { scrollReveal } from "../animation";
 
 export const QASection = () => {
   const [element, controls] = useScroll();
