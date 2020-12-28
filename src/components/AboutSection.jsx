@@ -12,9 +12,9 @@ const AboutSection = () => {
   };
 
   const container = {
-    hidden: { x: 200 },
+    hidden: { x: -60 },
     show: {
-      x: 0,
+      x: -35,
       transition: {
         duration: 1,
         ease: "easeInOut",

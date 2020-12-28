@@ -15,10 +15,16 @@ import item12 from "../img/merch/22.png";
 import item13 from "../img/merch/23.png";
 import item14 from "../img/merch/24.png";
 import item15 from "../img/merch/25.png";
+import { motion } from "framer-motion";
+import { pageAnimation, titleAnim } from "../animation";
 
 export const Merch = () => {
+  const titleAnimation = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1, transition: { duration: 2 } },
+  };
   return (
-    <>
+    <MerchWrapper>
       <MerchTitle>Леночкин Мерч &#128540;</MerchTitle>
 
       <MerchList>
@@ -82,9 +88,11 @@ export const Merch = () => {
           <img src={item15} alt="" />
         </MerchItem>
       </MerchList>
-    </>
+    </MerchWrapper>
   );
 };
+
+const MerchWrapper = styled(motion.div)``;
 
 const MerchList = styled.div`
   display: flex;

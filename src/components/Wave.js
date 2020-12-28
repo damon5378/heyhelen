@@ -29,4 +29,7 @@ const WaveSvg = styled.svg`
   @media (max-width: 768px) {
     bottom: 0px;
   }
+  @media (max-width: 576px) {
+    display: none;
+  }
 `;

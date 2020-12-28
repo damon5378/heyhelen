@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import axios from "axios";
 
 import { motion } from "framer-motion";
 import { pageAnimation, slider } from "../animation";
@@ -13,39 +14,16 @@ export const Videos = () => {
 
   // let finalURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=${channelID}&part=snippet,id&order=date&maxResults=${result}`;
 
-  // let [resultYoutube, setResultYoutube] = useState([]);
+  // let [resultYoutube, setResultYoutube] = useState({});
 
   // useEffect(() => {
-  //   fetch(finalURL)
-  //     .then((response) => response.json())
-  //     .then((responseJson) => {
-
-  //       resultYoutube = responseJson.items.map(
-  //         (obj) => "https://www.youtube.com/embed/" + obj.id.videoId
-  //       );
-  //       setResultYoutube({ resultYoutube });
-  //       console.log(resultYoutube);
-
-  //       resultYoutube.map((video, index) => (
-  //         <Video key={index}>
-  //           {/* <h2> АСМР ЧЕРЕЗ 20 МИНУТ ТЫ УСНЕШЬ 🤗 БЛИЗКИЙ ШЕПОТ С УШКА НА УШКО | ASMR SLEEP IN 20 MINUTES</h2> */}
-  //           <iframe
-  //             width="720"
-  //             height="480"
-  //             title="ASMR
-  //     SLEEP IN 20 MINUTES"
-  //             src={video}
-  //             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  //             allowFullScreen={true}
-  //           ></iframe>
-
-  //         </Video>
-  //       ));
+  //   axios
+  //     .get(finalURL)
+  //     .then((response) => {
+  //       setResultYoutube(response.data);
   //     })
-  //     .catch((error) => console.error(error));
+  //     .catch((error) => console.log(error));
   // }, []);
-
-  // YxipcYp60s0
 
   return (
     <VideosList
@@ -58,6 +36,12 @@ export const Videos = () => {
       <Frame2 variants={slider}></Frame2>
       <Frame3 variants={slider}></Frame3>
       <Frame4 variants={slider}></Frame4>
+
+      {/* {resultYoutube && (
+        <iframe
+          src={`http://www.youtube.com/embed/${resultYoutube.items[0].id.videoId}&enablejsapi=1`}
+        ></iframe>
+      )} */}
 
       <MainVideo>
         <MyVideo>

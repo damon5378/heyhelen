@@ -42,7 +42,7 @@ export const TriggersSection = () => {
           <Card>
             <div className="icon">
               <img src={wood} alt="" />
-              <h3>Дерево</h3>
+              <h3 className="wood">Дерево</h3>
             </div>
             <p>Классный звук при постукивании по дереву</p>
           </Card>
@@ -84,6 +84,7 @@ const Triggers = styled(motion.div)`
     padding: 0rem 0rem;
   }
   @media (max-width: 576px) {
+    margin-top: -250px;
     p {
       width: 100%;
     }
@@ -176,6 +177,9 @@ const Card = styled.div`
       color: #000;
       padding: 1rem;
       border-radius: 20px;
+    }
+    .wood {
+      padding: 1rem 1.6rem;
     }
   }
   img {
