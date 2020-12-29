@@ -119,6 +119,19 @@ export const Videos = () => {
           height="480"
           title="ASMR
           SLEEP IN 20 MINUTES"
+          src="https://www.youtube.com/embed/oRmLNW1vcvY"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
+        ></iframe>
+      </Video>
+
+      <Video>
+        {/* <h2> АСМР ЧЕРЕЗ 20 МИНУТ ТЫ УСНЕШЬ 🤗 БЛИЗКИЙ ШЕПОТ С УШКА НА УШКО | ASMR SLEEP IN 20 MINUTES</h2> */}
+        <iframe
+          width="720"
+          height="480"
+          title="ASMR
+          SLEEP IN 20 MINUTES"
           src="https://www.youtube.com/embed/YxipcYp60s0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen={true}
